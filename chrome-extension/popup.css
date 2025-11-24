@@ -1,0 +1,77 @@
+.chart {
+    display: flex;
+    height: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chart-bar {
+    transition: width 0.3s;
+}
+
+.positive { background: #4CAF50; }
+.neutral { background: #9E9E9E; }
+.negative { background: #F44336; }
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.comments-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.comment-item {
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 3px;
+    font-size: 11px;
+    border-left: 3px solid;
+}
+
+.comment-positive { border-left-color: #4CAF50; background: #E8F5E8; }
+.comment-neutral { border-left-color: #9E9E9E; background: #F5F5F5; }
+.comment-negative { border-left-color: #F44336; background: #FFEBEE; }
+
+.comment-text {
+    margin-bottom: 2px;
+}
+
+.comment-confidence {
+    font-size: 10px;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    flex: 1;
+}
+
+.filters {
+    display: flex;
+    gap: 2px;
+    margin: 10px 0;
+}
+
+.filters button {
+    flex: 1;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.filters button.active {
+    background: #007bff;
+    color: white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h3>YouTube Sentiment</h3>
+        <button id="darkModeBtn">🌙</button>
+        
+        <button id="analyzeBtn">Analyser les commentaires</button>
+        
+        <div id="loading" class="hidden">🔄 Analyse...</div>
+        <div id="error" class="error hidden"></div>
+
+        <!-- Statistiques -->
+        <div id="stats" class="stats hidden">
+            <div class="chart">
+                <div class="chart-bar positive" id="positiveBar"></div>
+                <div class="chart-bar neutral" id="neutralBar"></div>
+                <div class="chart-bar negative" id="negativeBar"></div>
+            </div>
+            <div class="numbers">
+                <div><span class="positive">👍</span> <span id="positiveCount">0</span> (<span id="positivePercent">0%</span>)</div>
+                <div><span class="neutral">😐</span> <span id="neutralCount">0</span> (<span id="neutralPercent">0%</span>)</div>
+                <div><span class="negative">👎</span> <span id="negativeCount">0</span> (<span id="negativePercent">0%</span>)</div>
+            </div>
+        </div>
+
+        <!-- Filtres -->
+        <div id="filters" class="filters hidden">
+            <button data-filter="all" class="active">Tous</button>
+            <button data-filter="1">Positifs</button>
+            <button data-filter="0">Neutres</button>
+            <button data-filter="-1">Négatifs</button>
+        </div>
+
+        <!-- Liste commentaires -->
+        <div id="commentsList" class="comments-list hidden"></div>
+
+        <!-- Actions -->
+        <div id="actions" class="actions hidden">
+            <button id="copyBtn">📋 Copier résultats</button>
+            <button id="exportBtn">💾 Exporter CSV</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+# Fichiers Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.python
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Logs et cache
+*.log
+.cache
+.coverage
+.tox
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Données et tests
+data/
+test*
+chrome-extension/
+src/
+
+# Documentation
+*.md
+README.rst
+
+# Fichiers temporaires
+*.tmp
+*.temp
